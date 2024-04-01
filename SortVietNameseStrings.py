@@ -142,7 +142,7 @@ start_time = time.time()
 #initialize
 information_about_radix_values = Initialize(strings, collation, number_of_digit)
 #sort
-#StringQuickSort(strings, 0, len(strings)-1, information_about_radix_values) #O(nlgn) in normal situations the hidden constant factor is 5 but in this case depending on circumstances it is 300 or more! The running time of the algorithm is depedning heavy on the CompareTwoStrings() function, the less similar the strings are the faster the algorithm is
+#StringQuickSort(strings, 0, len(strings)-1, information_about_radix_values) #O(nlgn) in normal situations the hidden constant factor is 5 but in this case depending on circumstances it ranges from 38 to 8+digit*30! The running time of the algorithm is depedning heavy on the CompareTwoStrings() function, the less similar the strings are the faster the algorithm is.
 StringRadixSort(strings, information_about_radix_values) #takes digit*(4 + 2n*360 + radix) on every case = θ(d(2n +k))
 
 #display
