@@ -171,10 +171,16 @@ GLOBLE, GLOBLE1 = 0, 0
 #initialize
 #information_about_radix_values = Initialize(strings, collation, number_of_digit)
 #sort
+<<<<<<< HEAD
 #StringQuickSort(strings, 0, len(strings)-1, information_about_radix_values) #O(nlgn) in normal situations the hidden constant factor is 5 but in this case depending on circumstances it range from 80 to 8+digit*72! The running time of the algorithm is depedning heavy on the CompareTwoStrings() function, the less similar the strings are the faster the algorithm is
 #StringRadixSort(strings, information_about_radix_values) #takes digit*(4 + 2n*360 + radix) on every case = θ(d(2n +k))
 #nlgn*digit*30 
 #digit*2n*360
+=======
+#StringQuickSort(strings, 0, len(strings)-1, information_about_radix_values) #O(nlgn) in normal situations the hidden constant factor is 5 but in this case depending on circumstances it ranges from 38 to 8+digit*30! The running time of the algorithm is depedning heavy on the CompareTwoStrings() function, the less similar the strings are the faster the algorithm is.
+StringRadixSort(strings, information_about_radix_values) #takes digit*(4 + 2n*360 + radix) on every case = θ(d(2n +k))
+
+>>>>>>> origin/master
 #display
 for string in strings:print(string)
 print("len: %s" % len(strings))
@@ -184,9 +190,12 @@ print("Radix: %s"%GLOBLE1 )
 #Using two algorithms to sort 17,900 names 
 #Radix sort takes 11.74 seconds
 #Quicksort takes 9.36 minutes
+<<<<<<< HEAD
 #3 213 223
 #1 396 435
 
 #len = 5362
 #183 142 185          8+25*72×5362×log₂5392         ~109e6 worst case
 # 12 497 990         25*(2+(5+2*k+2*n*5))
+=======
+>>>>>>> origin/master
