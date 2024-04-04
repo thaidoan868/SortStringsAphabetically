@@ -1,5 +1,3 @@
 Sắp xếp tên tiếng Việt theo thứ tự.
 
-Sort strings by any collation you want to.
-
-I change this line.
+Sort strings by any collation.
